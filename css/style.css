@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+@import url(../css/main.style.css);
+
+
+
+
+:root {
+
+    /*------------ TAMAÑOS ----------*/
+    --font-size-grl: 16px;
+
+    /*------------ COLORES ----------*/
+    --color-main: #FF5733;
+    --color-secondary: #FFC300;
+    --color-intense: #C70039;
+    --color-white: #FAFAFA;
+    --color-black: #111111;
+    --gradiente-standar: linear-gradient(to left,  var(--color-intense), var(--color-main), var(--color-secondary));
+
+    /*------------ COLORES FIX ----------*/
+
+    --color-c: #00FFFF;
+    --color-m: #FF00FF;
+    --color-y: #FFFF00;
+    --color-k: #000000;
+
+    /*------------ FUENTE ----------*/
+
+    --font-base: "Verdana", "Geneva", "Tahoma", "sans-serif";
+    --font-custom-google: 'DotGothic16', sans-serif;
+
+    /*---------------------- margin border padding fixing -----------------------*/
+
+    height: 100svh;
+    max-width: fit-content;
+    margin: 15px solid var(--color-c);
+    border: 10px solid var(--color-m);
+    padding: 200px solid var(--color-y);
+
+    /*---------------------- margin border padding fixing -----------------------*/
+    
+    box-sizing: border-box;
+    
+
+
+
+}
+
+*,
+html {
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+header{
+
+    background-color: var(--color-black);
+    color:var(--color-white);
+    font-size: 26px;
+    font-family: var(--font-base);
+    text-align: center;
+
+}
+
+body{
+
+    background-color: var(--color-black);
+
+    color: var(--color-white);
+    font-family: var(--font-custom-google);
+
+
+    
+
+}
+
+p:hover {
+
+    color: var(--color-secondary);
+
+
+}
+
+p {
+    box-sizing: border-box;
+
+
+}
+
+section span {
+
+    
+    margin: 2rem;
+    
+
+    /*
+    display: flex;
+
+    */
+    justify-content: center;
+
+    align-items: center;
+
+
+
+
+}
+
+section span img {
+    width: 50px; 
+    height: auto;
+    align-self: center;
+
+    background: var(--gradiente-standar);
+
+
+
+    
+}
