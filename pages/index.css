@@ -1,0 +1,548 @@
+
+:root {
+
+    /*------------ TAMAÑOS ----------*/
+    --font-size-grl: 16px;
+
+    /*------------ COLORES ----------*/
+    --color-main: #FF5733;
+    --color-secondary: #FFC300;
+    --color-intense: #C70039;
+    --color-white: #FAFAFA;
+    --color-black: #111111;
+    --gradiente-standar: linear-gradient(to left,  var(--color-intense), var(--color-main), var(--color-secondary));
+
+    /*------------ COLORES FIX ----------*/
+
+    --color-c: #00FFFF;
+    --color-m: #FF00FF;
+    --color-y: #FFFF00;
+    --color-k: #000000;
+
+    /*------------ FUENTE ----------*/
+
+    --font-base: "Verdana", "Geneva", "Tahoma", "sans-serif";
+
+    /*---------------------- margin border padding fixing -----------------------*/
+    
+    box-sizing: border-box;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-base);
+
+}
+
+header{
+
+    background-color: var(--color-black);
+    
+}
+
+
+header .banner-img{
+
+    background-image: url("https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/f842c4d9-4628-401f-94e1-b9072644c21a/BannervIXELmEDIA/w=1920,quality=80");
+
+    background-position: center;
+
+    background-size: cover;
+
+    width: 100%;
+
+    height: 300px;
+
+    overflow: hidden;
+   
+
+
+}
+
+/* ---------------------Estilos para el navbar */
+.navbar {
+    background-color: var(--color-k); /* Fondo oscuro */
+    display: flex; /* Muestra los elementos en una línea horizontal */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    padding: 10px 20px; /* Espaciado interno */
+  }
+
+  .navbar-logo img {
+    max-width: 50px; /* Tamaño máximo del logo */
+}
+  
+  .navbar a {
+    text-decoration: none; /* Quita la subrayado de los enlaces */
+    color: var(--color-white); /* Color del texto en blanco */
+    margin: 0 10px; /* Margen horizontal entre los enlaces */
+  }
+  
+  /* Estilos para los enlaces al pasar el cursor */
+  .navbar a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+  }
+
+  /* ------------------Fin stilos para el navbar */
+  
+
+body{
+
+    background-color: var(--color-black);
+
+    color: var(--color-white);
+    font-family: var(--font-custom-google);
+
+
+    
+
+}
+
+p:hover {
+
+    color: var(--color-secondary);
+
+
+}
+
+p {
+    box-sizing: border-box;
+
+
+}
+
+section span {
+
+    
+    margin: 2rem;
+    
+
+    /*
+    display: flex;
+
+    */
+    justify-content: center;
+
+    align-items: center;
+
+
+
+
+}
+
+section span img {
+    width: 50px; 
+    height: auto;
+    align-self: center;
+
+    background: var(--gradiente-standar);
+
+    
+}
+
+/* -------------------------------Estilos para la sección principal (hero) */
+
+.hero-flexbox{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: 150px 50px;
+
+
+}
+
+.hero {
+    text-align: left; /* Alinea el contenido a la izquierda */
+    padding: 100px 0;
+    display: flex; /* Utiliza flexbox para organizar el contenido en filas */
+    align-items: center; /* Alinea verticalmente el contenido en el centro */
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin: 20px 0px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin: 30px 0px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-main); 
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.cta-button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+}
+
+/* Estilos para el video de YouTube */
+.hero-video {
+    padding: 20px;
+    width: 50%; /* El video ocupa el 50% del ancho */
+    display: flex;
+}
+
+.hero-video iframe {
+    width: 100%;
+    max-height: 500px; /* Altura máxima del video */
+}
+/* -------------------------------Fin estilos para la sección principal (hero) */
+
+/* -------------------------------Estilos para el footer */
+.site-footer {
+    background-color: var(--color-k);
+    color: var(--color-white)
+ 
+}
+
+/* Estilos para la imagen del logo */
+.footer-logo img {
+    max-width: 50px; /* Tamaño máximo del logo */
+}
+
+/* Estilos para los iconos */
+.footer-icons a {
+    display: inline-block;
+    margin: 0 10px; /* Espaciado entre los iconos */
+}
+
+/* --------------------------Añade estilos específicos para los iconos (tamaño, colores, etc.) si lo deseas */
+
+/* -----------------------------Estilos para la sección de servicios */
+.services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin: 20px 0px;
+}
+
+.services p {
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+/* Estilos para cada columna de servicio */
+
+.service-flexbox{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+
+}
+.service {
+    max-width: 350px;
+    text-align: left;
+
+}
+
+.service img {
+    max-width: 80px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin: 15px 0px;
+    
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* ---------------- Fin añade estilos adicionales según tus preferencias */
+
+/* ------------------- Estilos para la sección Nosotros */
+.about-us {
+    background-color: var(--color-black); /* Cambia COLOR_FONDO_NOSOTROS por tu color de fondo personalizado */
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-content {
+    max-width: 400px;
+    text-align: left;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-us .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-black); /* Cambia COLOR_BOTON_NOSOTROS por tu color de botón personalizado */
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-us .cta-button:hover {
+    background-color: var(--color-secondary); /* Cambia COLOR_BOTON_NOSOTROS_HOVER por tu color de botón al pasar el cursor personalizado */
+}
+
+.about-us-image {
+    max-width: 500px;
+}
+
+/* -------------------- Añade estilos adicionales según tus preferencias */
+
+/* -------------------- Estilos para la sección de Contacto */
+.contact {
+    background-color: var(--color-black); /* Cambia COLOR_FONDO_CONTACTO por tu color de fondo personalizado */
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image {
+    max-width: 100px;
+}
+
+.contact-content {
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-main); /* Cambia COLOR_BOTON_CONTACTO por tu color de botón personalizado */
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact .cta-button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+}
+
+/* --------------------- Añade estilos adicionales según tus preferencias */
+
+
+/* Estilos para la sección de Portfolio */
+.portfolio {
+    background-color: var(--color-black); /* Cambia COLOR_FONDO_PORTFOLIO por tu color de fondo personalizado */
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.portfolio-flexbox{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.portfolio h3 {
+
+    font-size: 24px;
+    margin: 15px 0px;
+
+}
+
+.portfolio p {
+    font-size: 16px;
+}
+
+/* Estilos para cada proyecto del Portfolio */
+.portfolio-project {
+    max-width: 350px;
+    margin: 0 20px; /* Espacio entre los proyectos */
+    text-align: left;
+}
+
+.portfolio-project img {
+    max-width: 30px;
+
+    
+}
+
+
+
+.portfolio-project h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.portfolio-project p {
+    font-size: 16px;
+}
+
+.portfolio-project .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-main);
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-project .cta-button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+}
+
+
+
+/* -----------------Estilos para la Galería de Imágenes con IA */
+.image-gallery {
+    background-color: var(--color-black); 
+    padding: 50px 0;
+}
+
+.image-gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-slides {
+    display: flex;
+    overflow: hidden;
+}
+
+.gallery-image {
+    max-width: 300px;
+    margin: 20px; /* Espacio entre las imágenes */
+    transition: transform 0.3s ease;
+}
+
+.gallery-image img {
+    max-width: 100%;
+    border: 2px solid var(--color-black); 
+}
+
+.gallery-controls {
+    margin-top: 20px;
+}
+
+/* Añade estilos adicionales según tus preferencias */
+
+
+/* Animación de movimiento de las imágenes en la sección de Portfolio */
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(850%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-850%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(25%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(25%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animated-image {
+    animation: moveRight 4s linear infinite alternate; /* La imagen se moverá de izquierda a derecha y viceversa en 4 segundos */
+}
+
+.animated-image:nth-child(2n) {
+    animation: moveLeft 4s linear infinite alternate; /* Invertimos la dirección para las imágenes pares */
+}
+
+.animated-image2 {
+    animation: moveUp 4s linear infinite alternate; /* La imagen se moverá de izquierda a derecha y viceversa en 4 segundos */
+}
+
+.animated-image2:nth-child(2n) {
+    animation: moveDown 4s linear infinite alternate; /* Invertimos la dirección para las imágenes pares */
+}
