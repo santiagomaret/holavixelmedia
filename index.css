@@ -410,7 +410,6 @@ section span img {
     background-color: var(--color-black); 
     padding: 50px 0;
     text-align: center;
-    display: flex;
 }
 
 .image-gallery h2 {
