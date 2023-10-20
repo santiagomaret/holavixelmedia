@@ -1,3 +1,4 @@
+@import url(./css/animation.css);
 
 :root {
 
@@ -64,10 +65,11 @@ header .banner-img{
 
 /* ---------------------Estilos para el navbar */
 .navbar {
-    background-color: var(--color-k); /* Fondo oscuro */
+    background-color: var(--color-black); /* Fondo oscuro */
     display: flex; /* Muestra los elementos en una línea horizontal */
     justify-content: space-between; /* Espaciado uniforme entre elementos */
     padding: 10px 20px; /* Espaciado interno */
+    align-items: center;
   }
 
   .navbar-logo img {
@@ -76,59 +78,39 @@ header .banner-img{
   
   .navbar a {
     text-decoration: none; /* Quita la subrayado de los enlaces */
-    color: var(--color-white); /* Color del texto en blanco */
+    font-weight: bold;
+    color: var(--color-white);
     margin: 0 10px; /* Margen horizontal entre los enlaces */
   }
   
   /* Estilos para los enlaces al pasar el cursor */
   .navbar a:hover {
     text-decoration: underline; /* Subrayado al pasar el cursor */
+    color: var(--color-main);
   }
 
   /* ------------------Fin stilos para el navbar */
   
 
 body{
-
     background-color: var(--color-black);
-
     color: var(--color-white);
     font-family: var(--font-custom-google);
-
-
-    
-
 }
 
 p:hover {
-
     color: var(--color-secondary);
-
-
 }
 
 p {
     box-sizing: border-box;
-
-
 }
 
 section span {
 
-    
     margin: 2rem;
-    
-
-    /*
-    display: flex;
-
-    */
     justify-content: center;
-
     align-items: center;
-
-
-
 
 }
 
@@ -207,26 +189,6 @@ section span img {
 }
 /* -------------------------------Fin estilos para la sección principal (hero) */
 
-/* -------------------------------Estilos para el footer */
-.site-footer {
-    background-color: var(--color-k);
-    color: var(--color-white)
- 
-}
-
-/* Estilos para la imagen del logo */
-.footer-logo img {
-    max-width: 50px; /* Tamaño máximo del logo */
-}
-
-/* Estilos para los iconos */
-.footer-icons a {
-    display: inline-block;
-    margin: 0 10px; /* Espaciado entre los iconos */
-}
-
-/* --------------------------Añade estilos específicos para los iconos (tamaño, colores, etc.) si lo deseas */
-
 /* -----------------------------Estilos para la sección de servicios */
 .services {
     text-align: center;
@@ -272,15 +234,13 @@ section span img {
     font-size: 16px;
 }
 
-/* ---------------- Fin añade estilos adicionales según tus preferencias */
-
 /* ------------------- Estilos para la sección Nosotros */
 .about-us {
-    background-color: var(--color-black); /* Cambia COLOR_FONDO_NOSOTROS por tu color de fondo personalizado */
+    background-color: var(--color-black);
     text-align: center;
     padding: 50px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -302,8 +262,7 @@ section span img {
 .about-us .cta-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: var(--color-black); /* Cambia COLOR_BOTON_NOSOTROS por tu color de botón personalizado */
-    color: var(--color-white);
+    background-color: var(--color-main); 
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -311,18 +270,20 @@ section span img {
 }
 
 .about-us .cta-button:hover {
-    background-color: var(--color-secondary); /* Cambia COLOR_BOTON_NOSOTROS_HOVER por tu color de botón al pasar el cursor personalizado */
+    background-color: var(--color-secondary); 
 }
 
-.about-us-image {
-    max-width: 500px;
+.about-us-image img {
+    max-width: 400px;
+    border-radius: 5px;
 }
-
-/* -------------------- Añade estilos adicionales según tus preferencias */
 
 /* -------------------- Estilos para la sección de Contacto */
 .contact {
-    background-color: var(--color-black); /* Cambia COLOR_FONDO_CONTACTO por tu color de fondo personalizado */
+    background-image: url(./assets/media/images/contact.jpeg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
     text-align: center;
     padding: 50px 0;
     display: flex;
@@ -330,13 +291,15 @@ section span img {
     align-items: center;
 }
 
-.contact-image {
-    max-width: 100px;
-}
+
 
 .contact-content {
     max-width: 400px;
     text-align: left;
+    background-color: rgba(17, 17, 17, 0.9);
+    border-radius: 5px;
+    padding: 20px 30px;
+    
 }
 
 .contact h2 {
@@ -446,6 +409,8 @@ section span img {
 .image-gallery {
     background-color: var(--color-black); 
     padding: 50px 0;
+    text-align: center;
+    display: flex;
 }
 
 .image-gallery h2 {
@@ -479,58 +444,6 @@ section span img {
     margin-top: 20px;
 }
 
-/* Añade estilos adicionales según tus preferencias */
-
-
-/* Animación de movimiento de las imágenes en la sección de Portfolio */
-@keyframes moveRight {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(850%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes moveLeft {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-850%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes moveDown {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(25%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes moveUp {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(25%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 .animated-image {
     animation: moveRight 4s linear infinite alternate; /* La imagen se moverá de izquierda a derecha y viceversa en 4 segundos */
 }
@@ -545,4 +458,30 @@ section span img {
 
 .animated-image2:nth-child(2n) {
     animation: moveDown 4s linear infinite alternate; /* Invertimos la dirección para las imágenes pares */
+}
+
+
+/* -------------------------------Estilos para el footer */
+
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+/* Estilos para la imagen del logo */
+.footer-logo img {
+    max-width: 50px; 
+}
+
+/* Estilos para los iconos */
+.footer-icons a {
+    display: inline-block;
+    margin: 0 10px; /* Espaciado entre los iconos */
+}
+
+.footer-icons img {
+    max-width: 42px;
 }

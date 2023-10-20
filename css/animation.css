@@ -1,0 +1,48 @@
+/* Animación de movimiento de las imágenes en la sección de Portfolio */
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(850%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-850%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(25%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(25%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
