@@ -126,6 +126,8 @@ section span img {
 
 /* -------------------------------Estilos para la sección principal (hero) */
 
+
+
 .hero-flexbox{
 
     display: flex;
@@ -179,14 +181,10 @@ section span img {
 /* Estilos para el video de YouTube */
 .hero-video {
     padding: 20px;
-    width: 50%; /* El video ocupa el 50% del ancho */
+    width: 35%; /* El video ocupa el 50% del ancho */
     display: flex;
 }
 
-.hero-video iframe {
-    width: 100%;
-    max-height: 500px; /* Altura máxima del video */
-}
 /* -------------------------------Fin estilos para la sección principal (hero) */
 
 /* -----------------------------Estilos para la sección de servicios */
@@ -406,58 +404,8 @@ section span img {
 
 
 /* -----------------Estilos para la Galería de Imágenes con IA */
-.image-gallery {
-    background-color: var(--color-black); 
-    padding: 50px 0;
-    text-align: center;
-}
 
-.image-gallery h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
 
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery-slides {
-    display: flex;
-    overflow: hidden;
-}
-
-.gallery-image {
-    max-width: 300px;
-    margin: 20px; /* Espacio entre las imágenes */
-    transition: transform 0.3s ease;
-}
-
-.gallery-image img {
-    max-width: 100%;
-    border: 2px solid var(--color-black); 
-}
-
-.gallery-controls {
-    margin-top: 20px;
-}
-
-.animated-image {
-    animation: moveRight 4s linear infinite alternate; /* La imagen se moverá de izquierda a derecha y viceversa en 4 segundos */
-}
-
-.animated-image:nth-child(2n) {
-    animation: moveLeft 4s linear infinite alternate; /* Invertimos la dirección para las imágenes pares */
-}
-
-.animated-image2 {
-    animation: moveUp 4s linear infinite alternate; /* La imagen se moverá de izquierda a derecha y viceversa en 4 segundos */
-}
-
-.animated-image2:nth-child(2n) {
-    animation: moveDown 4s linear infinite alternate; /* Invertimos la dirección para las imágenes pares */
-}
 
 
 /* -------------------------------Estilos para el footer */
