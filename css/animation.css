@@ -47,5 +47,16 @@
     }
 }
 
+
+
 /* FIN Animación de movimiento de las imágenes en la sección de Portfolio */
+
+@keyframes rotar {
+	from {
+		transform: rotateY(0deg);
+	} to {
+		transform: rotateY(360deg);
+	}
+}
+
 
